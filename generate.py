@@ -129,8 +129,8 @@ MILESTONES = {
 }
 
 def _fetch_year(year: int, token: str) -> int | None:
-    q = ("query($f:DateTime!,$t:DateTime!){viewer{contributionsCollection(from:$f,to:$t)"
-         "{contributionCalendar{totalContributions}}}}")
+    q = ("query($f:DateTime!,$t:DateTime!){viewer{login contributionsCollection(from:$f,to:$t)"
+         "{restrictedContributionsCount contributionCalendar{totalContributions}}}}")
     payload = json.dumps({"query": q, "variables": {
         "f": f"{year}-01-01T00:00:00Z", "t": f"{year}-12-31T23:59:59Z"}}).encode()
     req = urllib.request.Request(
@@ -139,11 +139,18 @@ def _fetch_year(year: int, token: str) -> int | None:
                  "User-Agent": "f3nn3x-profile"})
     with urllib.request.urlopen(req, timeout=20) as r:
         data = json.load(r)
-    return data["data"]["viewer"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+    if data.get("errors"):
+        raise RuntimeError(data["errors"])
+    cc = data["data"]["viewer"]["contributionsCollection"]
+    total = cc["contributionCalendar"]["totalContributions"]
+    print(f"[telemetry] {year}: login={data['data']['viewer']['login']} "
+          f"total={total} restricted={cc['restrictedContributionsCount']}")
+    return total
 
 def resolve_route():
     """(year, count, headline, note) per year — live if a token is set, floored to known reals."""
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    print(f"[telemetry] token present: {bool(token)}")
     now_year = datetime.now(timezone.utc).year
     years = sorted(y for y in set(list(FALLBACK_CONTRIB) + [now_year - 1, now_year]) if y >= 2025)
     out = []
@@ -152,9 +159,10 @@ def resolve_route():
         if token:
             try:
                 live = _fetch_year(y, token)
-            except Exception:
-                live = None
+            except Exception as e:
+                print(f"[telemetry] {y} fetch error: {e!r}")
         count = max(live or 0, FALLBACK_CONTRIB.get(y, 0))   # never regress below known reals
+        print(f"[telemetry] {y}: live={live} floor={FALLBACK_CONTRIB.get(y)} -> {count}")
         head, note = MILESTONES.get(y, ("", ""))
         out.append((str(y), count, head, note))
     return out
