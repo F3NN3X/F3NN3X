@@ -89,7 +89,7 @@ STACK = [
 ]
 
 # system map — core + clustered nodes. (name, sub)
-ECO_CORE = ("F3NN3X.SYS", "one-person build pipeline")
+ECO_CORE = ("F3NN3X", "one-person build pipeline")
 ECO_LEFT = [  # DESKTOP TELEMETRY
     ("InfoPanel.FPS", "FPS · frametime · 11★"),
     ("InfoPanel.Media", "Spotify · VLC · browsers"),
@@ -358,7 +358,7 @@ def a_ecosystem(p):
     each tapping its cluster of project nodes. An amber pulse rides each bus."""
     H = 432
     b = [tick_rule(M, R, 40, p),
-         T(M, 28, "SYSTEM MAP — SIGNAL ROUTING", 11, p, "muted", ls=3.5, cls="fade s0"),
+         T(M, 28, "SIGNAL ROUTING — EVERYTHING FROM ONE PIPELINE", 11, p, "muted", ls=3.5, cls="fade s0"),
          T(R, 28, "CH.02 // MAP", 11, p, "muted", ls=3.5, anchor="end", cls="fade s0")]
 
     # --- processor chip, center top ---
