@@ -161,8 +161,9 @@ def resolve_route():
                 live = _fetch_year(y, token)
             except Exception as e:
                 print(f"[telemetry] {y} fetch error: {e!r}")
-        count = max(live or 0, FALLBACK_CONTRIB.get(y, 0))   # never regress below known reals
-        print(f"[telemetry] {y}: live={live} floor={FALLBACK_CONTRIB.get(y)} -> {count}")
+        # trust the live value when the token succeeds; fallback only when tokenless
+        count = live if live is not None else FALLBACK_CONTRIB.get(y, 0)
+        print(f"[telemetry] {y}: live={live} fallback={FALLBACK_CONTRIB.get(y)} -> {count}")
         head, note = MILESTONES.get(y, ("", ""))
         out.append((str(y), count, head, note))
     return out
