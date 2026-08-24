@@ -162,31 +162,12 @@ def resolve_route():
 ROUTE = [(str(y), FALLBACK_CONTRIB[y], *MILESTONES[y]) for y in sorted(FALLBACK_CONTRIB)]
 
 # ---------------------------------------------------------------- svg core ---
-# NOTE: resting state is always VISIBLE. Animations only *enhance* via `both`
-# fill (which supplies the hidden pre-state while animating). This way, if CSS
-# keyframe animations don't run — e.g. an SVG rendered through <img> in some
-# contexts — everything still shows correctly, just without motion.
-STYLE = """
-  .mono{font-family:%s}
-  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-  @keyframes fade{from{opacity:0}to{opacity:1}}
-  @keyframes draw{from{stroke-dashoffset:var(--l,0)}to{stroke-dashoffset:0}}
-  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-  @keyframes pulse{0%%,100%%{opacity:1}50%%{opacity:.3}}
-  @keyframes breathe{0%%,100%%{opacity:1}50%%{opacity:.55}}
-  @keyframes march{to{stroke-dashoffset:-12}}
-  .rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-  .fade{animation:fade .8s ease both}
-  .draw{animation:draw 1.5s cubic-bezier(.6,0,.2,1) both}
-  .grow{transform-box:fill-box;animation:grow 1.1s cubic-bezier(.2,.7,.2,1) both}
-  .pulse{animation:pulse 2.4s ease-in-out infinite}
-  .breathe{animation:breathe 3.2s ease-in-out infinite}
-  .march{stroke-dasharray:3 9;animation:march 1.4s linear infinite}
-  %s
-  @media (prefers-reduced-motion:reduce){
-    .rise,.fade,.draw,.grow,.pulse,.breathe,.march{animation:none}
-  }
-""" % (MONO, " ".join(f".s{n}{{animation-delay:{0.06 * n + 0.05:.2f}s}}" for n in range(0, 30)))
+# IMPORTANT: GitHub renders committed SVGs through <img>, where CSS @keyframes
+# animations DO NOT run (they freeze at the hidden `from` state and blank the
+# content). So all motion here is SMIL (<animate>), which DOES run in <img>.
+# CSS is font-family only; the fade/rise/grow class names are inert (kept so the
+# builders read cleanly) and every element renders fully visible at rest.
+STYLE = f".mono{{font-family:{MONO}}}"
 
 def esc(s):
     return html.escape(str(s), quote=True)
@@ -207,15 +188,8 @@ def T(x, y, s, size, p, color, ls=None, weight=None, anchor=None, cls=None, styl
 def L(x1, y1, x2, y2, p, color="rule", w=1, opacity=None, cls=None, draw=False):
     a = [f'x1="{x1}"', f'y1="{y1}"', f'x2="{x2}"', f'y2="{y2}"', f'stroke="{p[color]}"', f'stroke-width="{w}"']
     if opacity is not None: a.append(f'opacity="{opacity}"')
-    classes = []
-    if draw:
-        length = int(((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5) + 2
-        # dasharray only (offset 0 at rest = solid line); --l drives the reveal
-        a.append(f'stroke-dasharray="{length}"')
-        a.append(f'style="--l:{length}"')
-        classes.append("draw")
-    if cls: classes.extend(cls.split())
-    if classes: a.append(f'class="{" ".join(classes)}"')
+    # `draw` kept for call-site compatibility; lines render solid (no CSS reveal)
+    if cls: a.append(f'class="{cls}"')
     return f'<line {" ".join(a)}/>'
 
 def box(x, y, w, h, p, color="rule", sw=1, rx=2):
@@ -598,19 +572,20 @@ def write_readme(root, order, bmeta):
     open(os.path.join(root, "README.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
 
 def write_preview(root, man, order, bmeta):
-    # Inline the SVGs (not <img>) so CSS keyframe animations actually run in the
-    # preview. Colors are literal per-file, so there is no :root cross-contamination.
-    def inl(name):
+    # Render via <img> data-URIs — the SAME way GitHub renders committed SVGs —
+    # so the preview matches GitHub exactly (CSS animations don't run in <img>;
+    # only the SMIL motion does, which is intentional).
+    def uri(svg_text):
+        return "data:image/svg+xml;base64," + base64.b64encode(svg_text.encode("utf-8")).decode("ascii")
+    def img(name):
         ls, ds = man[name]
-        return f'<div class="light">{ls}</div><div class="dark">{ds}</div>'
-    body = [f'<div class="pic">{inl("header.svg")}</div>', '<div class="badges">']
-    for _, _, fname in bmeta:
-        body.append(f'<span class="badge">{inl(fname)}</span>')
-    body.append("</div>")
+        return (f'<img class="light" src="{uri(ls)}" alt="{name[:-4]}"/>'
+                f'<img class="dark" src="{uri(ds)}" alt="{name[:-4]}"/>')
+    body = [f'<div class="pic">{img("header.svg")}</div>']
     for sec, art in order:
-        body.append(f'<div class="pic">{inl(sec)}</div>')
-        body.append(f'<div class="pic">{inl(art)}</div>')
-    body.append(f'<div class="pic">{inl("footer.svg")}</div>')
+        body.append(f'<div class="pic">{img(sec)}</div>')
+        body.append(f'<div class="pic">{img(art)}</div>')
+    body.append(f'<div class="pic">{img("footer.svg")}</div>')
     open(os.path.join(root, "preview.html"), "w", encoding="utf-8", newline="\n").write(
         PREVIEW_TMPL.replace("__BODY__", "\n".join(body)))
 
@@ -628,9 +603,7 @@ PREVIEW_TMPL = """<meta charset="utf-8"/>
   .seg button.on{background:#333;color:#fff}
   .col{padding-top:26px;display:flex;flex-direction:column;gap:6px}
   .pic{width:100%}
-  .pic svg{width:100%;height:auto;display:block}
-  .badges{display:flex;gap:22px;justify-content:center;margin:6px 0 14px}
-  .badge svg{height:30px;width:auto}
+  .pic img{width:100%;height:auto;display:block}
   .dark{display:none}
   body.dk{--bg:#0d1117;--tab:#161b22;--tabfg:#8b949e;--line:#30363d;--fg:#ddd}
   body.dk .bar b{color:#ddd}

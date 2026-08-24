@@ -1,0 +1,44 @@
+name: refresh telemetry
+
+# Regenerates the profile SVGs from live GitHub data (contribution counts include
+# private repos when PROFILE_TOKEN carries the read:user scope) and commits any
+# changes. Viewers still only ever load committed, self-contained SVGs.
+
+on:
+  schedule:
+    - cron: '17 4 * * *'      # daily, 04:17 UTC
+  workflow_dispatch:           # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-telemetry
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate assets
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}   # classic PAT: read:user + repo
+        run: python generate.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets README.md
+          if git diff --cached --quiet; then
+            echo "No telemetry changes."
+          else
+            git commit -m "chore: refresh contribution telemetry"
+            git push
+          fi
