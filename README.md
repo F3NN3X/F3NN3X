@@ -1,12 +1,13 @@
-Full-stack developer from Norway, building across the whole stack.
-
-[InfoPanel](https://github.com/habibrehmansg/infopanel) plugins in C# / .NET, plus [InfoPanel Studio](https://github.com/F3NN3X/InfoPanel.Studio). Web platforms in TypeScript, Next.js and Laravel. Drawn to systems telemetry and clean tooling: dashboards one day, SaaS the next.
-
-**Focus:** desktop telemetry, full-stack web, dev tooling, design systems<br>
-**Shipping:** InfoPanel ecosystem, centr, rekyndo<br>
-**Stack:** C#, TypeScript, PHP, Python, Rust
-
 <!-- cool-readme:start -->
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/about-dark.svg">
+  <img src="stats/about-light.svg" width="800" alt="About: full-stack developer from Norway. InfoPanel plugins in C#, web platforms in TypeScript, Next.js and Laravel.">
+</picture>
+</p>
+<p align="center">
+  <a href="https://github.com/F3NN3X/InfoPanel.Studio">InfoPanel Studio</a> · <a href="https://github.com/habibrehmansg/infopanel">InfoPanel</a>
+</p>
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="stats/telemetry-dark.svg">
