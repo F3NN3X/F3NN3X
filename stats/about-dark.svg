@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="195" viewBox="0 0 800 195" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">About</title>
+<desc id="desc">Full-stack developer from Norway InfoPanel plugins in C# / .NET, plus InfoPanel Studio. Web platforms in TypeScript, Next.js and Laravel. Drawn to systems telemetry and clean tooling: dashboards one day, SaaS the next. Focus: Telemetry, full-stack web, dev tooling, design systems Shipping: InfoPanel ecosystem, centr, rekyndo Stack: C#, TypeScript, PHP, Python, Rust</desc>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #f0f6fc; }
+  .label { font-size: 14px; }
+  .value { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .small { font-size: 12px; }
+  .col { font-size: 11px; fill: #7d8590; letter-spacing: 0.04em; }
+  .secondary { fill: #9198a1; }
+  .muted { fill: #7d8590; }
+  .icon { fill: #9198a1; }
+  .fade { animation: fade 0.45s ease-out both; }
+  .grow { transform-box: fill-box; transform-origin: left center; animation: grow 0.9s cubic-bezier(.2,.7,.2,1) 0.15s both; }
+  .ring { animation: ring 1.2s cubic-bezier(.2,.7,.2,1) 0.2s both; }
+  .pop { transform-box: fill-box; transform-origin: center; animation: pop 0.4s ease-out 0.5s both; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } }
+  @keyframes grow { from { transform: scaleX(0); } }
+  @keyframes pop { from { opacity: 0; transform: scale(0.6); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect x="0.5" y="0.5" width="799" height="194" rx="6" fill="none" stroke="none"/>
+<text x="20" y="28" class="col">ABOUT</text><line x1="406" y1="20" x2="406" y2="175" stroke="#3d444d"/>
+<g transform="translate(20 46)"><g class="fade" style="animation-delay: 200ms"><text y="20" style="font-size: 22px; font-weight: 700;">Full-stack developer from Norway</text><text y="46" class="label secondary">InfoPanel plugins in C# / .NET, plus InfoPanel Studio.</text><text y="68" class="label secondary">Web platforms in TypeScript, Next.js and Laravel.</text><text y="90" class="label secondary">Drawn to systems telemetry and clean tooling:</text><text y="112" class="label secondary">dashboards one day, SaaS the next.</text></g></g>
+<g transform="translate(430 46)"><g class="fade" style="animation-delay: 290ms"><text y="11" class="col">FOCUS</text><text y="30" class="label">Telemetry, full-stack web, dev tooling, design systems</text></g></g>
+<g transform="translate(430 92)"><g class="fade" style="animation-delay: 380ms"><text y="11" class="col">SHIPPING</text><text y="30" class="label">InfoPanel ecosystem, centr, rekyndo</text></g></g>
+<g transform="translate(430 138)"><g class="fade" style="animation-delay: 470ms"><text y="11" class="col">STACK</text><text y="30" class="label">C#, TypeScript, PHP, Python, Rust</text></g></g>
+</svg>
