@@ -1,6 +1,6 @@
 # README cards, see https://github.com/F3NN3X/github-cool-readme (fork of pedrocatalao/github-cool-readme)
 style: classic
-cards: [telemetry, now, summary, languages, projects, glance, releases, streaks, downloads, types, activity, years, contributions, weekly]
+cards: [about, telemetry, now, summary, languages, projects, glance, releases, streaks, downloads, types, activity, years, contributions, weekly]
 summary:
   ring: github
 years:
@@ -11,3 +11,14 @@ glance:
   counter:
     label: InfoPanel repos
     prefix: InfoPanel.
+about:
+  headline: Full-stack developer from Norway
+  lines:
+    - InfoPanel plugins in C# / .NET, plus InfoPanel Studio.
+    - Web platforms in TypeScript, Next.js and Laravel.
+    - "Drawn to systems telemetry and clean tooling:"
+    - dashboards one day, SaaS the next.
+  facts:
+    Focus: Telemetry, full-stack web, dev tooling, design systems
+    Shipping: InfoPanel ecosystem, centr, rekyndo
+    Stack: C#, TypeScript, PHP, Python, Rust
