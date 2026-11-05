@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: pedrocatalao/github-cool-readme@v1
+      - uses: F3NN3X/github-cool-readme@main
         with:
           token: ${{ secrets.CARDS_TOKEN }}
       - name: Commit changed cards

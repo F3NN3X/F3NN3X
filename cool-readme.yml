@@ -1,4 +1,13 @@
-# README cards, see https://github.com/pedrocatalao/github-cool-readme
+# README cards, see https://github.com/F3NN3X/github-cool-readme (fork of pedrocatalao/github-cool-readme)
 style: classic
+cards: [summary, languages, contributions, weekly, projects, glance, activity, years]
 summary:
   ring: github
+years:
+  milestones:
+    2025: InfoPanel plugin surge
+    2026: Media · Spotify · MetYr
+glance:
+  counter:
+    label: InfoPanel repos
+    prefix: InfoPanel.
