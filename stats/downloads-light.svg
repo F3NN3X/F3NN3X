@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="195" viewBox="0 0 450 195" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Downloads</title>
+<desc id="desc">3947 release downloads. InfoPanel.FPS: 1368. InfoPanel.Spotify: 515. InfoPanel.RTSS: 505. InfoPanel.Media: 353. InfoPanel.MetYr: 246. InfoPanel.AudioMeter: 240</desc>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #1f2328; }
+  .label { font-size: 14px; }
+  .value { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .small { font-size: 12px; }
+  .col { font-size: 11px; fill: #818b98; letter-spacing: 0.04em; }
+  .secondary { fill: #59636e; }
+  .muted { fill: #818b98; }
+  .icon { fill: #59636e; }
+  .fade { animation: fade 0.45s ease-out both; }
+  .grow { transform-box: fill-box; transform-origin: left center; animation: grow 0.9s cubic-bezier(.2,.7,.2,1) 0.15s both; }
+  .ring { animation: ring 1.2s cubic-bezier(.2,.7,.2,1) 0.2s both; }
+  .pop { transform-box: fill-box; transform-origin: center; animation: pop 0.4s ease-out 0.5s both; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } }
+  @keyframes grow { from { transform: scaleX(0); } }
+  @keyframes pop { from { opacity: 0; transform: scale(0.6); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  .scroll { animation: scroll 8.6s ease-in-out infinite; }
+  @keyframes scroll { 0.00%, 40.70% { transform: translateY(-0px); } 50.00%, 90.70% { transform: translateY(-138px); } 100% { transform: translateY(0); } }
+</style>
+<rect x="0.5" y="0.5" width="449" height="194" rx="6" fill="none" stroke="none"/>
+<text x="20" y="28" class="col">DOWNLOADS</text><text x="430" y="28" class="col" text-anchor="end">3,947 TOTAL</text><clipPath id="rows"><rect x="0" y="40" width="450" height="138"/></clipPath><g clip-path="url(#rows)"><g class="scroll">
+<g transform="translate(20 44)"><g class="fade" style="animation-delay: 200ms"><text x="0" y="13" class="label" style="font-weight: 600;">InfoPanel.FPS</text><text x="410" y="13" class="value" text-anchor="end">1,368</text><rect y="22" width="410" height="8" rx="4" fill="#d1d9e0"/><rect class="grow" y="22" width="410.0" height="8" rx="4" fill="#0969da"/></g></g>
+<g transform="translate(20 90)"><g class="fade" style="animation-delay: 290ms"><text x="0" y="13" class="label" style="font-weight: 600;">InfoPanel.Spotify</text><text x="410" y="13" class="value" text-anchor="end">515</text><rect y="22" width="410" height="8" rx="4" fill="#d1d9e0"/><rect class="grow" y="22" width="154.3" height="8" rx="4" fill="#0969da"/></g></g>
+<g transform="translate(20 136)"><g class="fade" style="animation-delay: 380ms"><text x="0" y="13" class="label" style="font-weight: 600;">InfoPanel.RTSS</text><text x="410" y="13" class="value" text-anchor="end">505</text><rect y="22" width="410" height="8" rx="4" fill="#d1d9e0"/><rect class="grow" y="22" width="151.4" height="8" rx="4" fill="#0969da"/></g></g>
+<g transform="translate(20 182)"><g class="fade" style="animation-delay: 470ms"><text x="0" y="13" class="label" style="font-weight: 600;">InfoPanel.Media</text><text x="410" y="13" class="value" text-anchor="end">353</text><rect y="22" width="410" height="8" rx="4" fill="#d1d9e0"/><rect class="grow" y="22" width="105.8" height="8" rx="4" fill="#0969da"/></g></g>
+<g transform="translate(20 228)"><g class="fade" style="animation-delay: 560ms"><text x="0" y="13" class="label" style="font-weight: 600;">InfoPanel.MetYr</text><text x="410" y="13" class="value" text-anchor="end">246</text><rect y="22" width="410" height="8" rx="4" fill="#d1d9e0"/><rect class="grow" y="22" width="73.7" height="8" rx="4" fill="#0969da"/></g></g>
+<g transform="translate(20 274)"><g class="fade" style="animation-delay: 650ms"><text x="0" y="13" class="label" style="font-weight: 600;">InfoPanel.AudioMeter</text><text x="410" y="13" class="value" text-anchor="end">240</text><rect y="22" width="410" height="8" rx="4" fill="#d1d9e0"/><rect class="grow" y="22" width="71.9" height="8" rx="4" fill="#0969da"/></g></g>
+</g></g>
+</svg>
