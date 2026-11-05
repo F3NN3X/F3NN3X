@@ -1,6 +1,6 @@
 # README cards, see https://github.com/F3NN3X/github-cool-readme (fork of pedrocatalao/github-cool-readme)
 style: classic
-cards: [summary, languages, contributions, weekly, projects, glance, activity, years]
+cards: [summary, languages, projects, glance, releases, streaks, downloads, pulls, activity, years, contributions, weekly]
 summary:
   ring: github
 years:
