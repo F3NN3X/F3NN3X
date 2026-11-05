@@ -18,8 +18,8 @@
   @keyframes grow { from { transform: scaleX(0); } }
   @keyframes pop { from { opacity: 0; transform: scale(0.6); } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
-  .scroll { animation: scroll 8.6s ease-in-out infinite; }
-  @keyframes scroll { 0.00%, 40.70% { transform: translateY(-0px); } 50.00%, 90.70% { transform: translateY(-138px); } 100% { transform: translateY(0); } }
+  .scroll { animation: scroll 20s ease-in-out 4s infinite; }
+  @keyframes scroll { 0.00%, 46.00% { transform: translateY(-0px); } 50.00%, 96.00% { transform: translateY(-138px); } 100% { transform: translateY(0); } }
 </style>
 <rect x="0.5" y="0.5" width="449" height="194" rx="6" fill="none" stroke="none"/>
 <text x="20" y="28" class="col">DOWNLOADS</text><text x="430" y="28" class="col" text-anchor="end">3,947 TOTAL</text><clipPath id="rows"><rect x="0" y="40" width="450" height="138"/></clipPath><g clip-path="url(#rows)"><g class="scroll">
