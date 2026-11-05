@@ -1,3 +1,11 @@
+Full-stack developer from Norway, building across the whole stack.
+
+[InfoPanel](https://github.com/habibrehmansg/infopanel) plugins in C# / .NET, plus [InfoPanel Studio](https://github.com/F3NN3X/InfoPanel.Studio). Web platforms in TypeScript, Next.js and Laravel. Drawn to systems telemetry and clean tooling: dashboards one day, SaaS the next.
+
+**Focus:** desktop telemetry, full-stack web, dev tooling, design systems<br>
+**Shipping:** InfoPanel ecosystem, centr, rekyndo<br>
+**Stack:** C#, TypeScript, PHP, Python, Rust
+
 <!-- cool-readme:start -->
 <p align="center">
 <picture>
@@ -17,6 +25,26 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="stats/glance-dark.svg">
   <img src="stats/glance-light.svg" width="350" alt="At a glance">
+</picture>
+</p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/releases-dark.svg">
+  <img src="stats/releases-light.svg" width="450" alt="Latest releases">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/streaks-dark.svg">
+  <img src="stats/streaks-light.svg" width="350" alt="Streaks">
+</picture>
+</p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/downloads-dark.svg">
+  <img src="stats/downloads-light.svg" width="450" alt="Downloads">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/pulls-dark.svg">
+  <img src="stats/pulls-light.svg" width="350" alt="Pull requests">
 </picture>
 </p>
 <p align="center">
