@@ -9,6 +9,18 @@ Full-stack developer from Norway, building across the whole stack.
 <!-- cool-readme:start -->
 <p align="center">
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/telemetry-dark.svg">
+  <img src="stats/telemetry-light.svg" width="800" alt="Telemetry">
+</picture>
+</p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stats/now-dark.svg">
+  <img src="stats/now-light.svg" width="800" alt="Now building">
+</picture>
+</p>
+<p align="center">
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="stats/summary-dark.svg">
   <img src="stats/summary-light.svg" width="450" alt="GitHub stats">
 </picture>
@@ -43,8 +55,8 @@ Full-stack developer from Norway, building across the whole stack.
   <img src="stats/downloads-light.svg" width="450" alt="Downloads">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="stats/pulls-dark.svg">
-  <img src="stats/pulls-light.svg" width="350" alt="Pull requests">
+  <source media="(prefers-color-scheme: dark)" srcset="stats/types-dark.svg">
+  <img src="stats/types-light.svg" width="350" alt="Commit types">
 </picture>
 </p>
 <p align="center">
