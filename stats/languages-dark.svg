@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="206" viewBox="0 0 350 206" fill="none" role="img" aria-labelledby="title desc">
 <title id="title">Most used languages</title>
-<desc id="desc">TypeScript 61.1%, C# 11.4%, JavaScript 9.3%, PHP 4.2%, MDX 3.5%, HTML 3.4%, Other 7.1%</desc>
+<desc id="desc">TypeScript 60.8%, C# 11.3%, JavaScript 9.2%, PHP 4.2%, MDX 3.5%, HTML 3.4%, Other 7.6%</desc>
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #f0f6fc; }
   .label { font-size: 14px; }
@@ -22,12 +22,12 @@
 <rect x="0.5" y="0.5" width="349" height="205" rx="6" fill="none" stroke="none"/>
 <text x="20" y="28" class="col">MOST USED LANGUAGES</text>
 <mask id="bar"><rect class="grow" x="20" y="48" width="310" height="10" rx="5" fill="#fff"/></mask>
-<g mask="url(#bar)"><rect x="20.00" y="48" width="182.09" height="10" fill="#3178c6"/><rect x="204.09" y="48" width="34.02" height="10" fill="#7355dd"/><rect x="240.11" y="48" width="27.62" height="10" fill="#f1e05a"/><rect x="269.73" y="48" width="12.55" height="10" fill="#4F5D95"/><rect x="284.28" y="48" width="10.46" height="10" fill="#fcb32c"/><rect x="296.74" y="48" width="10.12" height="10" fill="#e34c26"/><rect x="308.86" y="48" width="21.14" height="10" fill="#6e7681"/></g>
-<g transform="translate(20 84)"><g class="fade" style="animation-delay: 200ms"><circle cx="5" cy="6" r="5" fill="#3178c6"/><text x="16" y="11" class="label">TypeScript <tspan class="secondary">61.1%</tspan></text></g></g>
-<g transform="translate(175 84)"><g class="fade" style="animation-delay: 270ms"><circle cx="5" cy="6" r="5" fill="#7355dd"/><text x="16" y="11" class="label">C# <tspan class="secondary">11.4%</tspan></text></g></g>
-<g transform="translate(20 116)"><g class="fade" style="animation-delay: 340ms"><circle cx="5" cy="6" r="5" fill="#f1e05a"/><text x="16" y="11" class="label">JavaScript <tspan class="secondary">9.3%</tspan></text></g></g>
+<g mask="url(#bar)"><rect x="20.00" y="48" width="181.22" height="10" fill="#3178c6"/><rect x="203.22" y="48" width="33.71" height="10" fill="#7355dd"/><rect x="238.93" y="48" width="27.48" height="10" fill="#f1e05a"/><rect x="268.41" y="48" width="12.43" height="10" fill="#4F5D95"/><rect x="282.85" y="48" width="10.37" height="10" fill="#fcb32c"/><rect x="295.22" y="48" width="10.05" height="10" fill="#e34c26"/><rect x="307.26" y="48" width="22.74" height="10" fill="#6e7681"/></g>
+<g transform="translate(20 84)"><g class="fade" style="animation-delay: 200ms"><circle cx="5" cy="6" r="5" fill="#3178c6"/><text x="16" y="11" class="label">TypeScript <tspan class="secondary">60.8%</tspan></text></g></g>
+<g transform="translate(175 84)"><g class="fade" style="animation-delay: 270ms"><circle cx="5" cy="6" r="5" fill="#7355dd"/><text x="16" y="11" class="label">C# <tspan class="secondary">11.3%</tspan></text></g></g>
+<g transform="translate(20 116)"><g class="fade" style="animation-delay: 340ms"><circle cx="5" cy="6" r="5" fill="#f1e05a"/><text x="16" y="11" class="label">JavaScript <tspan class="secondary">9.2%</tspan></text></g></g>
 <g transform="translate(175 116)"><g class="fade" style="animation-delay: 410ms"><circle cx="5" cy="6" r="5" fill="#4F5D95"/><text x="16" y="11" class="label">PHP <tspan class="secondary">4.2%</tspan></text></g></g>
 <g transform="translate(20 148)"><g class="fade" style="animation-delay: 480ms"><circle cx="5" cy="6" r="5" fill="#fcb32c"/><text x="16" y="11" class="label">MDX <tspan class="secondary">3.5%</tspan></text></g></g>
 <g transform="translate(175 148)"><g class="fade" style="animation-delay: 550ms"><circle cx="5" cy="6" r="5" fill="#e34c26"/><text x="16" y="11" class="label">HTML <tspan class="secondary">3.4%</tspan></text></g></g>
-<g transform="translate(20 180)"><g class="fade" style="animation-delay: 620ms"><circle cx="5" cy="6" r="5" fill="#6e7681"/><text x="16" y="11" class="label">Other <tspan class="secondary">7.1%</tspan></text></g></g>
+<g transform="translate(20 180)"><g class="fade" style="animation-delay: 620ms"><circle cx="5" cy="6" r="5" fill="#6e7681"/><text x="16" y="11" class="label">Other <tspan class="secondary">7.6%</tspan></text></g></g>
 </svg>
