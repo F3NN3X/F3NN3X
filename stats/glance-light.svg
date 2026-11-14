@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="195" viewBox="0 0 350 195" fill="none" role="img" aria-labelledby="title desc">
 <title id="title">At a glance</title>
-<desc id="desc">Repositories: 78. Public repos: 23. InfoPanel repos: 17. Stars earned: 35. Languages: 30. Contributions: 11552.</desc>
+<desc id="desc">Repositories: 78. Public repos: 23. InfoPanel repos: 17. Stars earned: 35. Languages: 31. Contributions: 11659.</desc>
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #1f2328; }
   .label { font-size: 14px; }
@@ -25,6 +25,6 @@
 <g transform="translate(175 46)"><g class="fade" style="animation-delay: 290ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">23</text><text y="35" class="small secondary">Public repos</text></g></g>
 <g transform="translate(20 94)"><g class="fade" style="animation-delay: 380ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">17</text><text y="35" class="small secondary">InfoPanel repos</text></g></g>
 <g transform="translate(175 94)"><g class="fade" style="animation-delay: 470ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">35</text><text y="35" class="small secondary">Stars earned</text></g></g>
-<g transform="translate(20 142)"><g class="fade" style="animation-delay: 560ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">30</text><text y="35" class="small secondary">Languages</text></g></g>
-<g transform="translate(175 142)"><g class="fade" style="animation-delay: 650ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">11,552</text><text y="35" class="small secondary">Contributions</text></g></g>
+<g transform="translate(20 142)"><g class="fade" style="animation-delay: 560ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">31</text><text y="35" class="small secondary">Languages</text></g></g>
+<g transform="translate(175 142)"><g class="fade" style="animation-delay: 650ms"><text y="18" style="font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums;">11,659</text><text y="35" class="small secondary">Contributions</text></g></g>
 </svg>
