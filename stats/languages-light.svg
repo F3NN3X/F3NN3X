@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="206" viewBox="0 0 350 206" fill="none" role="img" aria-labelledby="title desc">
 <title id="title">Most used languages</title>
-<desc id="desc">TypeScript 58.3%, JavaScript 10.7%, C# 10.1%, PHP 3.7%, HTML 3.3%, MDX 3.1%, Other 10.8%</desc>
+<desc id="desc">TypeScript 58.4%, JavaScript 10.7%, C# 10.1%, PHP 3.7%, HTML 3.3%, MDX 3.1%, Other 10.8%</desc>
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #1f2328; }
   .label { font-size: 14px; }
@@ -22,8 +22,8 @@
 <rect x="0.5" y="0.5" width="349" height="205" rx="6" fill="none" stroke="none"/>
 <text x="20" y="28" class="col">MOST USED LANGUAGES</text>
 <mask id="bar"><rect class="grow" x="20" y="48" width="310" height="10" rx="5" fill="#fff"/></mask>
-<g mask="url(#bar)"><rect x="20.00" y="48" width="173.79" height="10" fill="#3178c6"/><rect x="195.79" y="48" width="31.90" height="10" fill="#f1e05a"/><rect x="229.70" y="48" width="30.09" height="10" fill="#7355dd"/><rect x="261.78" y="48" width="11.01" height="10" fill="#4F5D95"/><rect x="274.80" y="48" width="9.94" height="10" fill="#e34c26"/><rect x="286.74" y="48" width="9.18" height="10" fill="#fcb32c"/><rect x="297.92" y="48" width="32.08" height="10" fill="#8c959f"/></g>
-<g transform="translate(20 84)"><g class="fade" style="animation-delay: 200ms"><circle cx="5" cy="6" r="5" fill="#3178c6"/><text x="16" y="11" class="label">TypeScript <tspan class="secondary">58.3%</tspan></text></g></g>
+<g mask="url(#bar)"><rect x="20.00" y="48" width="173.94" height="10" fill="#3178c6"/><rect x="195.94" y="48" width="31.82" height="10" fill="#f1e05a"/><rect x="229.76" y="48" width="30.01" height="10" fill="#7355dd"/><rect x="261.77" y="48" width="10.99" height="10" fill="#4F5D95"/><rect x="274.75" y="48" width="9.92" height="10" fill="#e34c26"/><rect x="286.67" y="48" width="9.16" height="10" fill="#fcb32c"/><rect x="297.83" y="48" width="32.17" height="10" fill="#8c959f"/></g>
+<g transform="translate(20 84)"><g class="fade" style="animation-delay: 200ms"><circle cx="5" cy="6" r="5" fill="#3178c6"/><text x="16" y="11" class="label">TypeScript <tspan class="secondary">58.4%</tspan></text></g></g>
 <g transform="translate(175 84)"><g class="fade" style="animation-delay: 270ms"><circle cx="5" cy="6" r="5" fill="#f1e05a"/><text x="16" y="11" class="label">JavaScript <tspan class="secondary">10.7%</tspan></text></g></g>
 <g transform="translate(20 116)"><g class="fade" style="animation-delay: 340ms"><circle cx="5" cy="6" r="5" fill="#7355dd"/><text x="16" y="11" class="label">C# <tspan class="secondary">10.1%</tspan></text></g></g>
 <g transform="translate(175 116)"><g class="fade" style="animation-delay: 410ms"><circle cx="5" cy="6" r="5" fill="#4F5D95"/><text x="16" y="11" class="label">PHP <tspan class="secondary">3.7%</tspan></text></g></g>
