@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="195" viewBox="0 0 350 195" fill="none" role="img" aria-labelledby="title desc">
 <title id="title">Commit types</title>
-<desc id="desc">feat 43.5%, fix 16.0%, docs 9.3%, chore 7.4%, ci 6.7%, Other 17.0%</desc>
+<desc id="desc">feat 44.1%, fix 15.3%, docs 9.6%, chore 7.1%, ci 6.9%, Other 17.0%</desc>
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: #f0f6fc; }
   .label { font-size: 14px; }
@@ -22,11 +22,11 @@
 <rect x="0.5" y="0.5" width="349" height="194" rx="6" fill="none" stroke="none"/>
 <text x="20" y="28" class="col">COMMIT TYPES</text>
 <mask id="bar"><rect class="grow" x="20" y="48" width="310" height="10" rx="5" fill="#fff"/></mask>
-<g mask="url(#bar)"><rect x="20.00" y="48" width="130.62" height="10" fill="#2da44e"/><rect x="152.62" y="48" width="48.09" height="10" fill="#cf222e"/><rect x="202.71" y="48" width="27.99" height="10" fill="#0969da"/><rect x="232.70" y="48" width="22.25" height="10" fill="#6e7781"/><rect x="256.95" y="48" width="20.10" height="10" fill="#1b7c83"/><rect x="279.04" y="48" width="50.96" height="10" fill="#6e7681"/></g>
-<g transform="translate(20 84)"><g class="fade" style="animation-delay: 200ms"><circle cx="5" cy="6" r="5" fill="#2da44e"/><text x="16" y="11" class="label">feat <tspan class="secondary">43.5%</tspan></text></g></g>
-<g transform="translate(175 84)"><g class="fade" style="animation-delay: 270ms"><circle cx="5" cy="6" r="5" fill="#cf222e"/><text x="16" y="11" class="label">fix <tspan class="secondary">16.0%</tspan></text></g></g>
-<g transform="translate(20 116)"><g class="fade" style="animation-delay: 340ms"><circle cx="5" cy="6" r="5" fill="#0969da"/><text x="16" y="11" class="label">docs <tspan class="secondary">9.3%</tspan></text></g></g>
-<g transform="translate(175 116)"><g class="fade" style="animation-delay: 410ms"><circle cx="5" cy="6" r="5" fill="#6e7781"/><text x="16" y="11" class="label">chore <tspan class="secondary">7.4%</tspan></text></g></g>
-<g transform="translate(20 148)"><g class="fade" style="animation-delay: 480ms"><circle cx="5" cy="6" r="5" fill="#1b7c83"/><text x="16" y="11" class="label">ci <tspan class="secondary">6.7%</tspan></text></g></g>
+<g mask="url(#bar)"><rect x="20.00" y="48" width="132.27" height="10" fill="#2da44e"/><rect x="154.27" y="48" width="45.81" height="10" fill="#cf222e"/><rect x="202.08" y="48" width="28.82" height="10" fill="#0969da"/><rect x="232.90" y="48" width="21.43" height="10" fill="#6e7781"/><rect x="256.33" y="48" width="20.69" height="10" fill="#1b7c83"/><rect x="279.01" y="48" width="50.99" height="10" fill="#6e7681"/></g>
+<g transform="translate(20 84)"><g class="fade" style="animation-delay: 200ms"><circle cx="5" cy="6" r="5" fill="#2da44e"/><text x="16" y="11" class="label">feat <tspan class="secondary">44.1%</tspan></text></g></g>
+<g transform="translate(175 84)"><g class="fade" style="animation-delay: 270ms"><circle cx="5" cy="6" r="5" fill="#cf222e"/><text x="16" y="11" class="label">fix <tspan class="secondary">15.3%</tspan></text></g></g>
+<g transform="translate(20 116)"><g class="fade" style="animation-delay: 340ms"><circle cx="5" cy="6" r="5" fill="#0969da"/><text x="16" y="11" class="label">docs <tspan class="secondary">9.6%</tspan></text></g></g>
+<g transform="translate(175 116)"><g class="fade" style="animation-delay: 410ms"><circle cx="5" cy="6" r="5" fill="#6e7781"/><text x="16" y="11" class="label">chore <tspan class="secondary">7.1%</tspan></text></g></g>
+<g transform="translate(20 148)"><g class="fade" style="animation-delay: 480ms"><circle cx="5" cy="6" r="5" fill="#1b7c83"/><text x="16" y="11" class="label">ci <tspan class="secondary">6.9%</tspan></text></g></g>
 <g transform="translate(175 148)"><g class="fade" style="animation-delay: 550ms"><circle cx="5" cy="6" r="5" fill="#6e7681"/><text x="16" y="11" class="label">Other <tspan class="secondary">17.0%</tspan></text></g></g>
 </svg>
